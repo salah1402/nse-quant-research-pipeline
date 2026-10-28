@@ -5,3 +5,4 @@ __pycache__/
 .ipynb_checkpoints/
 *.log
 ml_swing/fundamentals/raw_stocks/
+ml_swing/data/bhavcopy_live/
