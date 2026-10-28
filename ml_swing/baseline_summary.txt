@@ -1,0 +1,19 @@
+============================================================
+PHASE 3: BASELINE STRATEGY SUMMARY
+Rule: Monthly Rebalance, Top 10 by 12M Momentum, Equal Weight
+Costs: Delivery cost 0.17% per side (STT, slippage 0.05%, fees)
+============================================================
+
+[WALK-FORWARD TEST PERIOD: 2020 - 2023 (48 Months)]
+Baseline CAGR:             30.81%
+Baseline Max Drawdown:     -32.52%
+Baseline Monthly Win Rate: 68.75%
+Baseline Trade Win Rate:   55.42%
+Baseline Final Equity:     2.9275x
+
+[FULL HISTORICAL PERIOD: 2015 - 2023 (107 Months)]
+Baseline CAGR:             20.91%
+Baseline Max Drawdown:     -33.93%
+Baseline Monthly Win Rate: 65.42%
+Baseline Trade Win Rate:   54.36%
+Baseline Final Equity:     5.4373x

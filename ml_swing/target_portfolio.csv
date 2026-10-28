@@ -1,0 +1,2 @@
+rank,symbol,weight,close_price,momentum_12m,delivery_zscore,combined_score,status
+1,100% CASH,1.0,,,,,BEAR REGIME (Nifty < 50 SMA) - STAY IN CASH

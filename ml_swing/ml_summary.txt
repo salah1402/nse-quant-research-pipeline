@@ -1,0 +1,24 @@
+============================================================
+PHASE 4: ML MODEL WALK-FORWARD VALIDATION SUMMARY
+Model: XGBClassifier (Walk-Forward Folds: 2020, 2021, 2022, 2023)
+Strategy: Top 10 by predicted probability, monthly rebalance
+Costs: Delivery cost 0.17% per side (STT, slippage 0.05%, fees)
+Holdout: 2024 completely untouched
+============================================================
+
+ML Model CAGR:             28.14%
+ML Model Max Drawdown:     -34.07%
+ML Model Monthly Win Rate: 66.67%
+ML Model Trade Win Rate:   57.08%
+ML Model Final Equity:     2.6961x
+
+Feature Importance (Last Model: Train 2018-2022):
+---------------------------------------------
+dist_from_52w_high    : 14.24%
+momentum_12m          : 14.07%
+volatility_20d        : 13.40%
+momentum_6m           : 13.20%
+momentum_3m           : 12.86%
+rs_vs_nifty_3m        : 12.39%
+momentum_1m           : 10.79%
+volume_pct_change     : 9.05%

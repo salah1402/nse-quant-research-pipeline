@@ -1,0 +1,63 @@
+===========================================================================
+MOMENTUM BASELINE NULL TEST SUMMARY
+===========================================================================
+
+METADATA & ENVIRONMENT:
+  Random Seed:       42
+  Python Version:    3.10.11
+  Pandas Version:    2.3.3
+  NumPy Version:     2.2.6
+  SciPy Version:     1.15.3
+  Historical Range:  2015-01-30 to 2024-12-31
+  Fresh Range:       2024-12-31 to 2026-10-27
+  Cost Model:        0.17% per side on turnover
+
+===========================================================================
+STEP 0: RECONCILIATION OF 2015-2024 BASELINE CAGR
+===========================================================================
+  19.62% CAGR: Evaluated across all 119 calendar month intervals.
+               Included weekend special sessions: 2015-02-28 (Sat, 3 stocks) and 2016-10-30 (Sun, 3 stocks).
+  20.50% CAGR: Evaluated in sanity_checks.py across 117 intervals.
+               Filtered out dates where candidates < 13, avoiding the 3-stock concentrated drawdowns.
+
+===========================================================================
+TEST A: RANDOM-10 NULL DISTRIBUTION (1,000 RUNS)
+===========================================================================
+[WINDOW 1: 2015 - 2024 (10 Years)]
+  Momentum Baseline:    CAGR =  19.62%, MaxDD = -33.93%, Sharpe =  0.94
+  Null 5th Percentile:  CAGR =   8.74%, MaxDD = -51.76%, Sharpe =  0.51
+  Null 50th (Median):   CAGR =  13.58%, MaxDD = -40.38%, Sharpe =  0.72
+  Null 95th Percentile: CAGR =  19.08%, MaxDD = -29.16%, Sharpe =  0.94
+  Baseline Percentile Rank: CAGR = 96.6th percentile | Sharpe = 94.7th percentile
+
+[WINDOW 2: 2020 - 2023 (Walk-Forward)]
+  Momentum Baseline:    CAGR =  30.81%, MaxDD = -32.52%, Sharpe =  1.16
+  Null 5th Percentile:  CAGR =  17.49%, MaxDD = -39.78%, Sharpe =  0.77
+  Null 50th (Median):   CAGR =  26.85%, MaxDD = -32.18%, Sharpe =  1.11
+  Null 95th Percentile: CAGR =  37.20%, MaxDD = -25.09%, Sharpe =  1.45
+  Baseline Percentile Rank: CAGR = 74.7th percentile | Sharpe = 60.4th percentile
+
+===========================================================================
+TEST B: BENCHMARKS COMPARISON
+===========================================================================
+[WINDOW 1: 2015 - 2024]
+  Equal-Weight All 77:  CAGR =  18.36%, MaxDD = -32.65%, Sharpe =  1.00
+  NIFTY 50 B&H:         CAGR =  10.47%, MaxDD = -29.34%, Sharpe =  0.70
+  Momentum Baseline:    CAGR =  19.62%, MaxDD = -33.93%, Sharpe =  0.94
+
+[WINDOW 2: 2020 - 2023]
+  Equal-Weight All 77:  CAGR =  32.23%, MaxDD = -31.16%, Sharpe =  1.36
+  NIFTY 50 B&H:         CAGR =  15.60%, MaxDD = -29.34%, Sharpe =  0.82
+  Momentum Baseline:    CAGR =  30.81%, MaxDD = -32.52%, Sharpe =  1.16
+
+===========================================================================
+TEST C: FRESH OUT-OF-SAMPLE DATA (2025-01-01 TO LATEST)
+===========================================================================
+Period: 2024-12-31 to 2026-10-27 (22 Months)
+  Momentum Baseline:    CAGR = -10.27%, MaxDD = -22.62%, Sharpe = -0.37
+  Equal-Weight All 77:  CAGR =   4.47%, MaxDD = -11.74%, Sharpe =  0.34
+  NIFTY 50 B&H:         CAGR =  -2.08%, MaxDD = -14.78%, Sharpe = -0.07
+
+DATA ISSUES & FLAGS:
+  - Price anomaly on 2026-04-30 in VEDL: daily jump of 64.9%
+===========================================================================
